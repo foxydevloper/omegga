@@ -34,6 +34,9 @@ import interact from './interact';
 // minigame join event
 import minigameJoin from './minigameJoin';
 
+// server settings changed event
+import serverSettingsChanged from './serverSettingsChanged';
+
 export default [
   join,
   leave,
@@ -46,4 +49,5 @@ export default [
   mapChange,
   interact,
   minigameJoin,
+  serverSettingsChanged,
 ] as MatchGenerator<any>[];

@@ -791,6 +791,8 @@ Register custom `/commands` by returning `{registeredCommands: ['foo', 'bar']}` 
 | `mapchange`          | \[{map}\]                                                                                                                        | Runs when the map changes                                                                                                                                                            |          |
 | `autorestart`        | [autorestart config]                                                                                                             | Runs server has an autorestart scheduled                                                                                                                                             |          |
 | `minigamejoin`       | {player: {name, id}; minigameName: string}                                                                                       | Runs when a player joins a minigame. Note that minigameName is not unique between minigames. minigameName will be null if player leaves all minigames. This will run before `join`   |          |
+| `serversettingschanged`       | {whoChanged: {name, id, state, controller}                                                                                       | Runs when a player changes the server settings.   |          |
+
 
 ### Folder Structure
 
